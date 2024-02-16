@@ -26,6 +26,7 @@ export default {
 .key_words {
     text-transform: uppercase;
     color: $pf-accent;
+    transition: all .3s ease;
 
     &:hover {
         text-shadow: 1px 1px 7px $pf-accent;

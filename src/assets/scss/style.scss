@@ -25,6 +25,14 @@ select:-webkit-autofill:focus {
   }
 }
 
+.form-floating .form-control {
+  border-radius: 0;
+
+  &:focus {
+    border-radius: var(--bs-border-radius);
+  }
+}
+
 
 
 

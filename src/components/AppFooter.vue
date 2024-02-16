@@ -11,7 +11,7 @@
                             class="fa_brand" :icon="['fab', 'github']" size="xl" /></a>
                 </div>
                 <div>
-                    <small class="copyright">&copy; Zellini Marco 2024</small>
+                    <small class="fs-6 copyright">&copy; Zellini Marco 2024</small>
                 </div>
             </div>
         </div>
