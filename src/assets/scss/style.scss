@@ -1,0 +1,199 @@
+@use '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@use './partials/variables.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  // border: 1px solid $pf-light;
+  -webkit-text-fill-color: $pf-light;
+  -webkit-box-shadow: 0 0 0px 1000px $pf-dark inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-floating .form-control,
+.form-floating .form-control:focus {
+
+  &:-webkit-autofill+label {
+    background-color: transparent;
+  }
+}
+
+
+
+
+
+body {
+  height: 100vh;
+  background: radial-gradient($pf-dark, $pf-black);
+  color: $pf-light;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+#app {
+  position: relative;
+  z-index: 10;
+}
+
+#site_header {
+  height: 10vh;
+
+  nav {
+
+    .logo {
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .nav_link {
+      color: $pf-light;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all .3s ease;
+      margin: .45rem .65rem;
+
+      &:hover {
+        color: $pf-accent;
+      }
+    }
+
+    .nav_menu_button {
+      padding: .35rem .65rem;
+      border-radius: 20%;
+      transition: all .3s ease;
+
+      span {
+        border: 1px solid $pf-light;
+        border-radius: 2px;
+        width: 22px;
+        margin: .30rem 0;
+        transition: all .3s ease;
+        display: block;
+
+        &:hover {
+          border: 2px solid $pf-accent;
+        }
+      }
+
+      &:hover span {
+        border: 1px solid $pf-accent;
+      }
+
+    }
+  }
+}
+
+#site_main {
+  height: 80vh;
+  cursor: default;
+
+  .container {
+    height: 100%;
+
+    .line-light {
+      border: 2px solid $pf-accent;
+    }
+
+    .my_name {
+      font-weight: bold;
+      color: $pf-light;
+      font-size: 6.2rem;
+      transition: all .3s ease;
+
+      .lastname {
+        letter-spacing: 0.3rem;
+      }
+
+      &:hover {
+        text-shadow: 1px 1px 7px $pf-accent;
+      }
+
+    }
+
+    .job_description {
+      color: $pf-accent;
+    }
+  }
+}
+
+#site_footer {
+  height: 10vh;
+
+  .fa_brand_link {
+    cursor: pointer;
+
+    .fa_brand path {
+      fill: $pf-light;
+    }
+
+    &:hover .fa_brand path {
+      fill: $pf-accent;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  #site_main {
+    .container {
+      .my_name {
+        font-size: 5.5rem;
+
+        .lastname {
+          letter-spacing: 0rem;
+        }
+
+        &:hover {
+          text-shadow: 1px 1px 7px $pf-accent;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  #site_main {
+    .container {
+      .my_name {
+        font-size: 7.5rem;
+
+        .lastname {
+          letter-spacing: 0rem;
+        }
+
+        &:hover {
+          text-shadow: 1px 1px 7px $pf-accent;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  #site_main {
+    .container {
+
+      .my_name {
+        font-size: 10rem;
+
+        .lastname {
+          letter-spacing: 0rem;
+        }
+
+        &:hover {
+          text-shadow: 1px 1px 7px $pf-accent;
+        }
+      }
+    }
+  }
+}
